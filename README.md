@@ -34,7 +34,7 @@ For example, requesting account details:
 
     AccountDetails acc = api.getAccountDetails();
 
-#### Complete Example ####  
+#### Complete Example
 
     OHTAPI api = new OHTAPI("<secret key here>", "<public key here>", true);
     try {
