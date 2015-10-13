@@ -1,3 +1,6 @@
+.. image:: https://travis-ci.org/dimanbondarenko/OHTAPI-Library-Java.png
+    :target: https://travis-ci.org/dimanbondarenko/OHTAPI-Library-Java
+
 # OneHourTranslation API Library for Java #
 
 One Hour Translation&trade; provides translation, proofreading and transcription services worldwide.
