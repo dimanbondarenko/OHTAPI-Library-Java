@@ -2,13 +2,6 @@ package com.oht;
 
 import com.google.gson.JsonArray;
 
-/**
- * Created with IntelliJ IDEA.
- * User: diman
- * Date: 08.10.15
- * Time: 15:42
- * To change this template use File | Settings | File Templates.
- */
 public class OHTException extends Exception
 {
     public OHTException(int statusCode, String statusMessage, JsonArray errors)
