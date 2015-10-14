@@ -1,4 +1,4 @@
-[![Build Status](https://github.com/dimanbondarenko/OHTAPI-Library-Java.png?branch=master)](https://travis-ci.org/dimanbondarenko/OHTAPI-Library-Java)
+[![Build Status](https://travis-ci.org/dimanbondarenko/OHTAPI-Library-Java.png?branch=master)](https://travis-ci.org/dimanbondarenko/OHTAPI-Library-Java)
 
 # OneHourTranslation API Library for Java #
 
