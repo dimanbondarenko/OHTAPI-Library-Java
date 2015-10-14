@@ -778,7 +778,7 @@ public class OHTAPI {
 
                 JsonElement element = parser.parse(new InputStreamReader(response.getEntity().getContent()));
                 if (!element.isJsonObject())
-                    throw new Exception("OneHourTranslation response was malformed.");
+                    throw new OHTException(-1, "OneHourTranslation response was malformed.", null);
 
                 JsonObject status = element.getAsJsonObject().get("status").getAsJsonObject();
                 JsonArray errors = element.getAsJsonObject().get("errors").getAsJsonArray();

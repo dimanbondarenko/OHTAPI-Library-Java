@@ -11,8 +11,8 @@ import java.util.Collection;
 
 public class OHTAPITest {
 
-    private static OHTAPI api = new OHTAPI("bdf7befc604c2c9c1b5a8396775c7eba", "n6h9dCJwRjGxbQTLBm8Y", true);
-    private static OHTAPI api_wrong = new OHTAPI("bdf7befc604c2c9c1b5a8396775c7eb", "n6h9dCJwRjGxbQTLBm8", true);
+    private static OHTAPI api = new OHTAPI(System.getenv("oht_secret_key"), System.getenv("oht_public_key"), true);
+    private static OHTAPI api_wrong = new OHTAPI("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "bbbbbbbbbbbbbbbbbbb", true);
 
     private static String resource1String = "The quick brown fox jumps over the lazy dog.";
     private static String resource2String = "<text>The five boxing wizards jump quickly.</text>";
