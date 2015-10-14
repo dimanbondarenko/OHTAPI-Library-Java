@@ -28,7 +28,7 @@ public class OHTAPITest {
     private static String custom8String = "This is custom 8 field";
     private static String custom9String = "This is custom 9 field";
 
-    @Test()
+    @Test
     public void testWrongApiKeys() throws Exception {
         try {
             api_wrong.getAccountDetails();

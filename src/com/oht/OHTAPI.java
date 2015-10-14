@@ -2,7 +2,6 @@ package com.oht;
 
 import com.google.gson.*;
 import com.oht.entities.*;
-import com.sun.deploy.util.StringUtils;
 import org.apache.http.client.methods.*;
 import org.apache.http.entity.mime.MultipartEntityBuilder;
 import org.apache.http.impl.client.CloseableHttpClient;
@@ -676,9 +675,19 @@ public class OHTAPI {
             return this;
         }
 
+        public String joinStrings(String[] array, String delimiter) {
+            StringBuilder result = new StringBuilder();
+            for (int i = 0, il = array.length; i < il; i++) {
+                if (i > 0) result.append(delimiter);
+                result.append(array[i]);
+            }
+
+            return result.toString();
+        }
+
         public Request param(String name, String[] value) {
-            String comaSeparatedValues = StringUtils.join(Arrays.asList(value), ",");
-            this.params.put(name, comaSeparatedValues);
+            String comaSeparated = joinStrings(value, ",");
+            this.params.put(name, comaSeparated);
             return this;
         }
 
@@ -729,7 +738,7 @@ public class OHTAPI {
 
                 if (!stringParams.isEmpty()) {
                     urlString.append("?");
-                    urlString.append(StringUtils.join(stringParams, "&"));
+                    urlString.append(joinStrings(stringParams.toArray(new String[]{}), "&"));
                 }
 
                 if (method.equalsIgnoreCase("GET"))
