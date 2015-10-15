@@ -16,22 +16,17 @@ The following API library allows customers to submit and monitor jobs automatica
 2. Apache HttpComponents Client library (http://hc.apache.org/)
 3. Google Gson library (https://github.com/google/gson)
 
-#### Installation:
-TODO:
-
 ## Starters' Guide ##
 
 #### Configuration ####
 
 The API Library must be instantiated and configured before calling any API method.
 
-One method of configuration is done on object instantiation:
-
     OHTAPI api = new OHTAPI("<secret key here>", "<public key here>", false); // or <true> for using OHT Sandbox environment
 
 #### Running Methods ####
 
-Once configure and initialized, you are ready to call API methods.
+Once initialized, you are ready to call API methods.
 For example, requesting account details:
 
     AccountDetails acc = api.getAccountDetails();
